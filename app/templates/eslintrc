@@ -1,0 +1,11 @@
+{
+  "extends": "eslint-config-accurapp",
+  "rules": {
+    "generator-star-spacing": "off",
+    "no-multiple-empty-lines": "off",
+    "no-bitwise": "off",
+    "no-useless-escape": "off",
+    "react/jsx-no-bind": "off",
+    "react/no-unknown-property": ["warn", {"ignore": ["class", "for"]}]
+  }
+}

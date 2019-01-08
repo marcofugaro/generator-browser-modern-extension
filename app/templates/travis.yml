@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - 'node'
+cache:<% if (yarn) { %>
+  yarn: true<% } %>
+  directories:
+    - node_modules
+script:
+  - <%= yarn ? 'yarn' : 'npm run' %> build
+  - <%= yarn ? 'yarn' : 'npm run' %> test

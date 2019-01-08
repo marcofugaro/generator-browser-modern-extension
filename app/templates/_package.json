@@ -1,0 +1,66 @@
+{
+  "name": "<%= kebabTitle %>",
+  "version": "0.0.0",
+  "description": "<%= description %>",<% if (isOpenSource) { %>
+  "license": "MIT",
+  "repository": "<%= githubUsername %>/<%= kebabTitle %>",
+  "author": {
+    "name": "<%= name %>",
+    "email": "<%= email %>",
+    "url": "<%= website %>"
+  },<% } %>
+  "scripts": {
+    "postinstall": "check-node-version --package",
+    "start": "NODE_ENV=development gulp dev --require @std/esm",
+    "build": "NODE_ENV=production gulp build --require @std/esm",
+    "bundle": "NODE_ENV=production gulp bundle --require @std/esm",
+    "pretest": "npm run build",
+    "test": "ava"
+  },
+  "@std/esm": "all",
+  "browserslist": [
+    "last 1 Chrome version",
+    "last 1 Firefox version"
+  ],
+  "engines": {
+    "node": ">=8.6"
+  },
+  "dependencies": {
+    "lz-string": "^1.4.4",
+    "webextension-polyfill": "^0.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@std/esm": "^0.26.0",
+    "ava": "^1.0.1",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-lodash": "^3.3.4",
+    "babel-preset-proposals": "^0.1.0",
+    "chalk": "^2.4.2",
+    "check-node-version": "^3.1.1",
+    "del": "^3.0.0",
+    "dotenv": "^6.2.0",
+    "dotenv-webpack": "^1.6.0",
+    "eslint-config-accurapp": "^4.1.6",
+    "gulp": "^4.0.0",
+    "gulp-add-src": "^1.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-json-editor": "^2.5.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-zip": "^4.2.0",
+    "postcss-preset-env": "^6.5.0",
+    "puppeteer": "^1.11.0",
+    "sass-module-importer": "^1.4.0",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
+    "stylelint": "^9.9.0",
+    "stylelint-config-rational-order": "^0.0.2",
+    "stylelint-scss": "^3.4.4",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^4.28.3",
+    "webpack-stream": "^5.2.1"
+  }
+}
