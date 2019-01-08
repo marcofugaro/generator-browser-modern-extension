@@ -9,7 +9,7 @@ module.exports = class extends Generator {
 		return this.prompt([{
 			name: 'title',
 			message: 'What do you want to name your extension?',
-			default: this.appname,
+			default: _.startCase(this.appname),
       validate: prompt => prompt.length <= 45 ? true : 'The name must not exceed 45 characters',
 		}, {
 			name: 'description',
