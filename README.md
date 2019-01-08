@@ -16,6 +16,8 @@ It uses [webpack](https://webpack.js.org/) to bundle javascript and [SCSS](http:
 
 The development mode has **autoreload** of the chrome extension, meaning that when you change a file, the extension is loaded again in chrome! 🔥
 
+It comes with the [webextension-polyfill](https://github.com/mozilla/webextension-polyfill), which basically lets you write async/await code instead of the callback hell of the chrome extension apis. 💣
+
 ## AUTORELOAD SCREENSHOT
 
 It also bundles your extension when you're done, ready to be pusblished to the extension store!

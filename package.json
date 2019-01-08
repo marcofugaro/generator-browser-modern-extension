@@ -1,6 +1,6 @@
 {
   "name": "generator-browser-modern-extension",
-  "version": "1.1.1",
+  "version": "1.0.0",
   "description": "Scaffold out a boilerplate for creating a browser extension with up-to-date tools and autoreload",
   "license": "MIT",
   "repository": "marcofugaro/generator-browser-modern-extension",
