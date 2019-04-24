@@ -33,6 +33,8 @@ npm install -g generator-browser-modern-extension
 
 ## Usage
 
+First make sure you're in your project folder (`mkdir my-awesome-project && cd my-awesome-project/`), then run
+
 ```bash
 yo browser-modern-extension
 ```
