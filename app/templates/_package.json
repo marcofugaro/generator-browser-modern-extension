@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "<%= description %>",<% if (isOpenSource) { %>
   "license": "MIT",
-  "repository": "<%= githubUsername %>/<%= kebabTitle %>",
+  "repository": "https://github.com/<%= githubUsername %>/<%= kebabTitle %>",
   "author": {
     "name": "<%= name %>",
     "email": "<%= email %>",
