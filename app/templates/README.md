@@ -23,11 +23,6 @@
 - `<%= yarn ? 'yarn' : 'npm run' %> bundle` to compile the files and put them in a `.zip`, ready to be published.
 
 <% if (isOpenSource) { %>
-## License
-
-MIT © [<%= name %>](https://github.com/<%= githubUsername %>)
-
-
 [travis-image]: https://travis-ci.org/<%= githubUsername %>/<%= kebabTitle %>.svg?branch=master
 [travis-url]: https://travis-ci.org/<%= githubUsername %>/<%= kebabTitle %>
 <% } %>

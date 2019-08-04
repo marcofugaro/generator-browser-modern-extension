@@ -44,10 +44,5 @@ yo
 ```
 and select `Browser Modern Extension`.
 
-## License
-
-MIT © [Marco Fugaro](marcofugaro.it)
-
-
 [travis-image]: https://travis-ci.org/marcofugaro/generator-chrome-modern-extension.svg?branch=master
 [travis-url]: https://travis-ci.org/marcofugaro/generator-chrome-modern-extension

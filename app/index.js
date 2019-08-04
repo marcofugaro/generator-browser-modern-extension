@@ -2,7 +2,6 @@ const Generator = require('yeoman-generator')
 const _ = require('lodash')
 const superb = require('superb')
 const normalizeUrl = require('normalize-url')
-const humanizeUrl = require('humanize-url')
 
 module.exports = class extends Generator {
 	init() {
@@ -61,7 +60,7 @@ module.exports = class extends Generator {
 			name: 'website',
 			message: 'What is the URL of your website?',
 			store: true,
-			filter: prompt => prompt ? humanizeUrl(normalizeUrl(prompt)) : null,
+			filter: prompt => prompt ? normalizeUrl(prompt) : null,
       when: answers => answers.isOpenSource,
 		}, {
 			name: 'yarn',
@@ -87,7 +86,7 @@ module.exports = class extends Generator {
       // https://github.com/yeoman/yeoman-test/issues/29
       if (process.env.NODE_ENV === 'test') {
         actionType = action && actionType.toLowerCase().includes('browser') ? 'browser' : 'page',
-        website = website ? humanizeUrl(normalizeUrl(website)) : null
+        website = website ? normalizeUrl(website) : null
       }
 
 			this.templateVariables = {
