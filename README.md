@@ -4,7 +4,7 @@
 
 The boilerplate repo is [here](https://github.com/marcofugaro/browser-modern-extension-boilerplate).
 
-<img src="screenshots/demo.gif" width="600">
+<img src=".github/screenshots/demo.gif" width="600">
 
 ## Features
 
@@ -18,11 +18,11 @@ The development mode has **autoreload** of the chrome extension, meaning that wh
 
 It comes with the [webextension-polyfill](https://github.com/mozilla/webextension-polyfill), which basically lets you write **async/await code** instead of the callback hell of the chrome extension apis. 💣
 
-<img src="screenshots/start.png" width="700">
+<img src=".github/screenshots/start.png" width="700">
 
 It also bundles your extension when you're done, ready to be pusblished to the extension store!
 
-<img src="screenshots/bundle.png" width="700">
+<img src=".github/screenshots/bundle.png" width="700">
 
 ## Install
 
