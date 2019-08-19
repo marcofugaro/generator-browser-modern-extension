@@ -24,25 +24,15 @@ It also bundles your extension when you're done, ready to be pusblished to the e
 
 <img src=".github/screenshots/bundle.png" width="700">
 
-## Install
-
-```bash
-npm install -g yo
-npm install -g generator-browser-modern-extension
-```
-
 ## Usage
 
 First make sure you're in your project folder (`mkdir my-awesome-project && cd my-awesome-project/`), then run
 
 ```bash
-yo browser-modern-extension
+npm init yo browser-modern-extension
 ```
-or just
-```bash
-yo
-```
-and select `Browser Modern Extension`.
+
+This command will use `npx` to fetch the latest version of the generator and use it.
 
 [travis-image]: https://travis-ci.org/marcofugaro/generator-chrome-modern-extension.svg?branch=master
 [travis-url]: https://travis-ci.org/marcofugaro/generator-chrome-modern-extension
